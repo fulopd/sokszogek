@@ -15,6 +15,7 @@ namespace Sokszogek
         public Form1()
         {
             InitializeComponent();
+
         }
     }
 }
