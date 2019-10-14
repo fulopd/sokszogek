@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sokszogek.Views
 {
-    public interface ISokszog
+    public interface ISokszogView
     {
         string oldalA { get; set; }
         string oldalB { get; set; }

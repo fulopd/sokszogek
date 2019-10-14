@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace Sokszogek
 {
-    public partial class Form1 : Form ,ISokszog
+    public partial class Form1 : Form ,ISokszogView
     {
         public Form1()
         {
