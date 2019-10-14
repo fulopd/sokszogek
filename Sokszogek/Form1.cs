@@ -19,10 +19,24 @@ namespace Sokszogek
             
         }
 
-        public string oldalA { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string oldalB { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string Kerulet { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string Terulet { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public IList<string> SokszogLista { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string oldalA {
+            get => textBoxOldalA.Text;
+            set => textBoxOldalA.Text = value; }
+
+        public string oldalB {
+            get => textBoxOldalB.Text;
+            set => textBoxOldalB.Text = value; }
+
+        public string Kerulet {
+            get => textBoxKerulet.Text;
+            set => textBoxKerulet.Text = value; }
+
+        public string Terulet {
+            get => textBoxTerulet.Text;
+            set => textBoxTerulet.Text = value; }
+
+        public IList<string> SokszogLista {
+            get => throw new NotImplementedException();
+            set => throw new NotImplementedException(); }
     }
 }

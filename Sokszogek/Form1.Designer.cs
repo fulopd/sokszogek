@@ -32,16 +32,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.comboBoxSokszog = new System.Windows.Forms.ComboBox();
+            this.textBoxKerulet = new System.Windows.Forms.TextBox();
+            this.textBoxTerulet = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBoxOldalA = new System.Windows.Forms.TextBox();
+            this.textBoxOldalB = new System.Windows.Forms.TextBox();
+            this.textBoxOldalC = new System.Windows.Forms.TextBox();
+            this.buttonSzamol = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -51,12 +52,12 @@
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.textBox2, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.textBoxTerulet, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox1, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.textBox1, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.comboBoxSokszog, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.textBoxKerulet, 1, 1);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(49, 27);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
@@ -93,39 +94,39 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Terület:";
             // 
-            // comboBox1
+            // comboBoxSokszog
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(139, 3);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 3;
+            this.comboBoxSokszog.FormattingEnabled = true;
+            this.comboBoxSokszog.Location = new System.Drawing.Point(139, 3);
+            this.comboBoxSokszog.Name = "comboBoxSokszog";
+            this.comboBoxSokszog.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxSokszog.TabIndex = 3;
             // 
-            // textBox1
+            // textBoxKerulet
             // 
-            this.textBox1.Location = new System.Drawing.Point(139, 76);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(121, 20);
-            this.textBox1.TabIndex = 4;
+            this.textBoxKerulet.Location = new System.Drawing.Point(139, 76);
+            this.textBoxKerulet.Name = "textBoxKerulet";
+            this.textBoxKerulet.Size = new System.Drawing.Size(121, 20);
+            this.textBoxKerulet.TabIndex = 4;
             // 
-            // textBox2
+            // textBoxTerulet
             // 
-            this.textBox2.Location = new System.Drawing.Point(139, 149);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(121, 20);
-            this.textBox2.TabIndex = 5;
+            this.textBoxTerulet.Location = new System.Drawing.Point(139, 149);
+            this.textBoxTerulet.Name = "textBoxTerulet";
+            this.textBoxTerulet.Size = new System.Drawing.Size(121, 20);
+            this.textBoxTerulet.TabIndex = 5;
             // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Controls.Add(this.textBox5, 1, 2);
-            this.tableLayoutPanel2.Controls.Add(this.textBox4, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.textBoxOldalC, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.textBoxOldalB, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.label5, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.label4, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.label6, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.textBox3, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.textBoxOldalA, 1, 0);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(357, 30);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 3;
@@ -162,32 +163,42 @@
             this.label6.TabIndex = 3;
             this.label6.Text = "Oldal B:";
             // 
-            // textBox3
+            // textBoxOldalA
             // 
-            this.textBox3.Location = new System.Drawing.Point(116, 3);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 4;
+            this.textBoxOldalA.Location = new System.Drawing.Point(116, 3);
+            this.textBoxOldalA.Name = "textBoxOldalA";
+            this.textBoxOldalA.Size = new System.Drawing.Size(100, 20);
+            this.textBoxOldalA.TabIndex = 4;
             // 
-            // textBox4
+            // textBoxOldalB
             // 
-            this.textBox4.Location = new System.Drawing.Point(116, 77);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 5;
+            this.textBoxOldalB.Location = new System.Drawing.Point(116, 77);
+            this.textBoxOldalB.Name = "textBoxOldalB";
+            this.textBoxOldalB.Size = new System.Drawing.Size(100, 20);
+            this.textBoxOldalB.TabIndex = 5;
             // 
-            // textBox5
+            // textBoxOldalC
             // 
-            this.textBox5.Location = new System.Drawing.Point(116, 151);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 6;
+            this.textBoxOldalC.Location = new System.Drawing.Point(116, 151);
+            this.textBoxOldalC.Name = "textBoxOldalC";
+            this.textBoxOldalC.Size = new System.Drawing.Size(100, 20);
+            this.textBoxOldalC.TabIndex = 6;
+            // 
+            // buttonSzamol
+            // 
+            this.buttonSzamol.Location = new System.Drawing.Point(49, 250);
+            this.buttonSzamol.Name = "buttonSzamol";
+            this.buttonSzamol.Size = new System.Drawing.Size(75, 23);
+            this.buttonSzamol.TabIndex = 2;
+            this.buttonSzamol.Text = "Számolás";
+            this.buttonSzamol.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(626, 301);
+            this.Controls.Add(this.buttonSzamol);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Form1";
@@ -203,19 +214,20 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBoxTerulet;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox comboBoxSokszog;
+        private System.Windows.Forms.TextBox textBoxKerulet;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBoxOldalC;
+        private System.Windows.Forms.TextBox textBoxOldalB;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBoxOldalA;
+        private System.Windows.Forms.Button buttonSzamol;
     }
 }
 
