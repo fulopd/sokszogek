@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.textBoxTerulet = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.comboBoxSokszog = new System.Windows.Forms.ComboBox();
             this.textBoxKerulet = new System.Windows.Forms.TextBox();
-            this.textBoxTerulet = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.label4 = new System.Windows.Forms.Label();
+            this.textBoxOldalC = new System.Windows.Forms.TextBox();
+            this.textBoxOldalB = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.textBoxOldalA = new System.Windows.Forms.TextBox();
-            this.textBoxOldalB = new System.Windows.Forms.TextBox();
-            this.textBoxOldalC = new System.Windows.Forms.TextBox();
             this.buttonSzamol = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -67,6 +67,13 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(272, 204);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
+            // textBoxTerulet
+            // 
+            this.textBoxTerulet.Location = new System.Drawing.Point(139, 149);
+            this.textBoxTerulet.Name = "textBoxTerulet";
+            this.textBoxTerulet.Size = new System.Drawing.Size(121, 20);
+            this.textBoxTerulet.TabIndex = 5;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -76,15 +83,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Sokszög:";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 73);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Kerület:";
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -93,6 +91,15 @@
             this.label3.Size = new System.Drawing.Size(43, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Terület:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(3, 73);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(43, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Kerület:";
             // 
             // comboBoxSokszog
             // 
@@ -108,13 +115,6 @@
             this.textBoxKerulet.Name = "textBoxKerulet";
             this.textBoxKerulet.Size = new System.Drawing.Size(121, 20);
             this.textBoxKerulet.TabIndex = 4;
-            // 
-            // textBoxTerulet
-            // 
-            this.textBoxTerulet.Location = new System.Drawing.Point(139, 149);
-            this.textBoxTerulet.Name = "textBoxTerulet";
-            this.textBoxTerulet.Size = new System.Drawing.Size(121, 20);
-            this.textBoxTerulet.TabIndex = 5;
             // 
             // tableLayoutPanel2
             // 
@@ -136,14 +136,19 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(227, 201);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
-            // label4
+            // textBoxOldalC
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(3, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 13);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Oldal A:";
+            this.textBoxOldalC.Location = new System.Drawing.Point(116, 151);
+            this.textBoxOldalC.Name = "textBoxOldalC";
+            this.textBoxOldalC.Size = new System.Drawing.Size(100, 20);
+            this.textBoxOldalC.TabIndex = 6;
+            // 
+            // textBoxOldalB
+            // 
+            this.textBoxOldalB.Location = new System.Drawing.Point(116, 77);
+            this.textBoxOldalB.Name = "textBoxOldalB";
+            this.textBoxOldalB.Size = new System.Drawing.Size(100, 20);
+            this.textBoxOldalB.TabIndex = 5;
             // 
             // label5
             // 
@@ -153,6 +158,15 @@
             this.label5.Size = new System.Drawing.Size(44, 13);
             this.label5.TabIndex = 2;
             this.label5.Text = "Oldal C:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(3, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(44, 13);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Oldal A:";
             // 
             // label6
             // 
@@ -169,20 +183,6 @@
             this.textBoxOldalA.Name = "textBoxOldalA";
             this.textBoxOldalA.Size = new System.Drawing.Size(100, 20);
             this.textBoxOldalA.TabIndex = 4;
-            // 
-            // textBoxOldalB
-            // 
-            this.textBoxOldalB.Location = new System.Drawing.Point(116, 77);
-            this.textBoxOldalB.Name = "textBoxOldalB";
-            this.textBoxOldalB.Size = new System.Drawing.Size(100, 20);
-            this.textBoxOldalB.TabIndex = 5;
-            // 
-            // textBoxOldalC
-            // 
-            this.textBoxOldalC.Location = new System.Drawing.Point(116, 151);
-            this.textBoxOldalC.Name = "textBoxOldalC";
-            this.textBoxOldalC.Size = new System.Drawing.Size(100, 20);
-            this.textBoxOldalC.TabIndex = 6;
             // 
             // buttonSzamol
             // 
@@ -203,6 +203,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);

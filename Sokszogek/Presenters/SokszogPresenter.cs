@@ -13,5 +13,15 @@ namespace Sokszogek.Presenters
         private ISokszogView sokszogView;
         private ISokszogRepositori sokszogRepositori;
 
+        public SokszogPresenter(ISokszogView sokszogv)
+        {
+            sokszogView = sokszogv;
+            sokszogRepositori = new SokszogRepositori();
+        }
+
+        public void LoadData() {
+            sokszogView.SokszogLista = sokszogRepositori.GetSokszogek();
+        }
+
     }
 }

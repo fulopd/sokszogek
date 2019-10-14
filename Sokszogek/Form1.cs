@@ -1,4 +1,5 @@
-﻿using Sokszogek.Views;
+﻿using Sokszogek.Presenters;
+using Sokszogek.Views;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,9 +14,13 @@ namespace Sokszogek
 {
     public partial class Form1 : Form ,ISokszogView
     {
+        private SokszogPresenter presenter;
+
         public Form1()
         {
+            presenter = new SokszogPresenter(this);
             InitializeComponent();
+            
             
         }
 
@@ -36,7 +41,12 @@ namespace Sokszogek
             set => textBoxTerulet.Text = value; }
 
         public IList<string> SokszogLista {
-            get => throw new NotImplementedException();
-            set => throw new NotImplementedException(); }
+            get => (List<string>)comboBoxSokszog.DataSource;
+            set => comboBoxSokszog.DataSource = value; }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            presenter.LoadData();
+        }
     }
 }
