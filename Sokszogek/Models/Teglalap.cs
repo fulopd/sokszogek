@@ -6,16 +6,23 @@ using System.Threading.Tasks;
 
 namespace Sokszogek.Models
 {
-    class Teglalap : Sokszog
+    public class Teglalap : Sokszog
     {
+        public Teglalap(double A, double B) : base(A, B)
+        {
+            
+        }
+
         public override double Kerulet()
         {
-            throw new NotImplementedException();
+            return 2 * (oldalA + oldalB);
         }
 
         public override double Terulet()
         {
-            throw new NotImplementedException();
+            return oldalA * oldalB;
         }
+
+        
     }
 }
