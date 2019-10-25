@@ -14,9 +14,7 @@ namespace Sokszogek.Views
         string Terulet { get; set; }
         IList<string> SokszogLista{ get; set; }
 
-        
-
-
+       
 
 
     }
